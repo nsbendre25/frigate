@@ -60,6 +60,7 @@ if [[ "${TARGETARCH}" == "amd64" ]]; then
     # install amd / intel-i965 driver packages
     apt-get -qq install --no-install-recommends --no-install-suggests -y \
         i965-va-driver intel-gpu-tools onevpl-tools \
+        intel-media-va-driver-non-free libva-drm2 mesa-va-drivers \
         libva-drm2 \
         mesa-va-drivers radeontop
 

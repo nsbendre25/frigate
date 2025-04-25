@@ -24,9 +24,9 @@ services:
     #                     capabilities: [gpu]
     environment:
       YOLO_MODELS: ""
-    # devices:
+    devices:
       # - /dev/bus/usb:/dev/bus/usb # Uncomment for Google Coral USB
-      # - /dev/dri:/dev/dri # for intel hwaccel, needs to be updated for your hardware
+      - /dev/dri:/dev/dri # for intel hwaccel, needs to be updated for your hardware
     volumes:
       - .:/workspace/frigate:cached
       - ./web/dist:/opt/frigate/web:cached
